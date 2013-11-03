@@ -1,0 +1,52 @@
+body { 
+color:white; 
+font-family:Helvetica, sans-serif;  
+padding: 10px
+}
+
+.holder{
+postion:relative; 
+height:auto;
+}
+
+ul { 
+float:left; 
+width:300px; 
+overflow:hidden; 
+border-radius:6px; 
+}
+
+li { 
+background:yellowgreen; 
+display:block; 
+position:relative; 
+padding:12px 6px; 
+z-index:1; 
+margin:5px 20px; 
+border-radius:6px;
+}
+
+li:after { 
+display:block; 
+position:absolute; 
+height:100%; 
+width:100%; 
+top:0px; 
+left:0px; 
+content:' ';  
+z-index:-1; 
+}
+/*This is the important css you need to animate the sortable list*/
+.placeholder { 
+left:10px; 
+background:#d0d8e0; 
+width:85%; 
+height:2em; 
+border:1px dashed #adb3ba;  
+margin:0px 10px 0px 10px; 
+padding:0; 
+-moz-transition:all 0.3s ease-in; 
+-webkit-transition:all 0.3s ease-in; 
+transition:all 0.3s ease-in;
+}
+
